@@ -18,7 +18,7 @@ def merge_channels(input_dir: str = 'dataset/', output_dir: str = 'merged_img/',
                    show_result: bool = True) -> None:
     """
     function for merging r,g,b channels
-    :param input_dir: Directory for dataset. Example: 'data/'. Format of images: '00000_r.jpg'.
+    :param input_dir: Directory for dataset. Example: 'dataset/'.
     :param output_dir: Directory to save merged images. Example: 'merged_img/'
     :param show_result: Flag for showing result
     :return: None
@@ -62,4 +62,4 @@ def merge_channels(input_dir: str = 'dataset/', output_dir: str = 'merged_img/',
 
 
 if __name__ == '__main__':
-    merge_channels('dataset/', 'result', show_result=False)
+    merge_channels('dataset/', 'result/', show_result=False)
